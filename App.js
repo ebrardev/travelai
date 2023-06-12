@@ -1,10 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Carousel from 'react-native-reanimated-carousel';
+import Card from './components/Card';
+import ChatScreen from './components/chat';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.Text}>Welcome the travel Ai Api</Text>
+      <Carousel/>
+      <Card/>
+      <ChatScreen/>
       <StatusBar style="auto" />
     </View>
   );
